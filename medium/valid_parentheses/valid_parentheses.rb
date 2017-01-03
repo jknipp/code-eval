@@ -10,7 +10,7 @@ File.open(ARGV[0]).each_line do |line|
   line.strip!
 
   # short circuit unmatched (odd length) strings
-  if line.size == 0 || line.size % 2 != 0 
+  if line.size == 0 || line.size % 2 != 0
     puts "False"
     next
   end
